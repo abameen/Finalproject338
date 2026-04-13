@@ -7,71 +7,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
 </head>
-
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="findings.html">Findings</a>
-      <a href="locations.html">Locations</a>
-    </nav>
-    <h1>Detroit Traffic Injury Analysis</h1>
-    <p>How roadway design relates to severe crashes on Detroit’s most dangerous streets.</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Project Overview</h2>
-      <p>This project examines how roadway design, lane count, and intersection complexity are connected to crash severity in Detroit.</p>
-    </section>
-
-    <section>
-      <h2>The Problem</h2>
-      <p>Detroit’s most serious crashes are concentrated on a small group of major corridors and intersections, especially along the High Injury Network.</p>
-    </section>
-
-    <section>
-      <h2>Key Findings</h2>
-      <ul>
-        <li>Wider roads were linked to more severe crashes.</li>
-        <li>Speed limit did not show a strong relationship with severity.</li>
-        <li>A small number of streets and intersections accounted for many severe crashes.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Visual Highlights</h2>
-
-      <figure>
-        <img src="img.detroit.png" alt="A Detroit street scene showing a busy roadway and city traffic">
-        <figcaption>A scenery of a busy Detroit street.</figcaption>
-      </figure>
-      <!-- <p>The detailed charts and map used in the report support these findings and appear in the full project materials.</p> -->
-    <!-- </section>
-    <section>
-      <h2>Recommendations</h2>
-      <ul>
-        <li>Prioritize the highest-risk corridors for design improvements.</li>
-        <li>Review signalized intersections with repeated severe crashes.</li>
-        <li>Use the High Injury Network to guide safety investments.</li>
-      </ul>
-    </section>
-  </main>
-    <footer>
-        <p>&copy; 2026 Ameen Abdur-Rasheed | SI 305 Final Project</p>
-    </footer>
-</body>
-</html> --> -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detroit Traffic Injury Analysis</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
-</head>
 <body>
   <header>
     <nav>
@@ -112,6 +47,79 @@
     </section>
 
     <section>
+      <h2>Recommendations</h2>
+      <ul>
+        <li>Prioritize the highest-risk corridors for design improvements.</li>
+        <li>Review signalized intersections with repeated severe crashes.</li>
+        <li>Use the High Injury Network to guide safety investments.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ameen Abdur-Rasheed | SI 305 Final Project</p>
+  </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detroit Traffic Injury Analysis</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="hero-card">
+      <h1>Detroit Traffic Injury Analysis</h1>
+      <p>How roadway design relates to severe crashes on Detroit’s most dangerous streets.</p>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="findings.html">Findings</a>
+        <a href="locations.html">Locations</a>
+      </nav>
+
+      <form class="search-bar" action="#" method="get">
+        <label class="sr-only" for="site-search">Search this page</label>
+        <input id="site-search" type="search" name="q" placeholder="Search this page">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel panel-overview">
+      <h2>Project Overview</h2>
+      <p>This project examines how roadway design, lane count, and intersection complexity are connected to crash severity in Detroit.</p>
+    </section>
+
+    <section class="panel panel-highlights">
+      <h2>Highlights</h2>
+      <figure>
+        <img src="img.detroit.png" alt="A Detroit street scene showing a busy roadway and city traffic">
+        <figcaption>A scenery of a busy Detroit street.</figcaption>
+      </figure>
+    </section>
+
+    <section class="panel panel-problem">
+      <h2>The Problem</h2>
+      <p>Detroit’s most serious crashes are concentrated on a small group of major corridors and intersections, especially along the High Injury Network.</p>
+    </section>
+
+    <section class="panel panel-findings">
+      <h2>Key Findings</h2>
+      <ul>
+        <li>Wider roads were linked to more severe crashes.</li>
+        <li>Speed limit did not show a strong relationship with severity.</li>
+        <li>A small number of streets and intersections accounted for many severe crashes.</li>
+      </ul>
+    </section>
+
+    <section class="panel panel-recommendations">
       <h2>Recommendations</h2>
       <ul>
         <li>Prioritize the highest-risk corridors for design improvements.</li>
