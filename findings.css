@@ -247,3 +247,34 @@ footer p {
     padding: 2.25rem;
   }
 }
+
+/* filter buttons */
+.filter-bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 1rem 1rem 0;
+}
+
+.filter-btn {
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* hidden panel state */
+.panel-hidden {
+  display: none;
+}
+

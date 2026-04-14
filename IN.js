@@ -134,3 +134,31 @@
     }, 3500);
   }
 })();
+
+/* ── 4. Findings Filter Bar ── */
+(function initFilter() {
+  const buttons = document.querySelectorAll(".filter-btn");
+  if (!buttons.length) return; // only runs on findings page
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+
+      // remove active style from all buttons, add to clicked one
+      buttons.forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+      const topics = document.querySelectorAll("[data-topic]");
+
+      topics.forEach(function (panel) {
+        if (filter === "all" || panel.getAttribute("data-topic") === filter) {
+          // show matching panels
+          panel.classList.remove("panel-hidden");
+        } else {
+          // hide non-matching panels
+          panel.classList.add("panel-hidden");
+        }
+      });
+    });
+  });
+})();
