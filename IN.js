@@ -1,5 +1,4 @@
-/* ── 1. Active Nav Link ─────────────────────────────────── */
-
+/* Active Nav Link  */
 (function highlightActiveNav() {
   const currentFile = location.pathname.split("/").pop() || "index.html";
   const navLinks = document.querySelectorAll("nav a");
@@ -13,7 +12,7 @@
 })();
 
 
-/* ── 2. Scroll Fade-In for Panels ───────────────────────── */
+/*Scroll Fade-In for Panels*/
 
 (function initScrollFade() {
   const panels = document.querySelectorAll(".panel");
@@ -41,7 +40,7 @@
 })();
 
 
-/* ── 3. Search Bar ──────────────────────────────────────── */
+/*Search Bar */
 
 (function initSearch() {
   const form = document.querySelector(".search-bar");

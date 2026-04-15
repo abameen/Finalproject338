@@ -39,7 +39,7 @@ a:focus-visible {
   text-decoration: underline;
 }
 
-/* ── Header / Hero ── */
+/*Header  */
 
 .site-header {
   width: 100%;
@@ -181,7 +181,7 @@ figcaption {
   font-size: 0.88rem;
 }
 
-/* ── Lists ── */
+/*Lists */
 
 ul {
   margin: 0;
@@ -192,7 +192,7 @@ li + li {
   margin-top: 0.5rem;
 }
 
-/* ── Footer ── */
+/* Footer*/
 
 footer {
   padding: 0 0 2rem;
@@ -209,7 +209,7 @@ footer p {
   box-shadow: var(--shadow);
 }
 
-/* ── Accessibility ── */
+/*Accessibility  */
 
 .sr-only {
   position: absolute;
@@ -223,7 +223,7 @@ footer p {
   border: 0;
 }
 
-/* ── Responsive ── */
+/*Responsive */
 
 @media (min-width: 700px) {
   .hero-card,
@@ -277,4 +277,3 @@ footer p {
 .panel-hidden {
   display: none;
 }
-
