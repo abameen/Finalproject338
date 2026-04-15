@@ -135,7 +135,7 @@
   }
 })();
 
-/* ── 4. Findings Filter Bar ── */
+/* Findings Filter Bar ── */
 (function initFilter() {
   const buttons = document.querySelectorAll(".filter-btn");
   if (!buttons.length) return; // only runs on findings page
