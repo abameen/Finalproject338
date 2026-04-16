@@ -12,6 +12,7 @@
 })();
 
 
+
 /*Scroll Fade-In for Panels*/
 
 (function initScrollFade() {
@@ -46,9 +47,7 @@
   const form = document.querySelector(".search-bar");
   if (!form) return;
 
-  /* Keyword → page mapping
-     Each entry has a page and a list of keywords that point to it.
-     Keywords are lowercase. Add more as needed. */
+  /* Keyword page mapping, Each entry has a page and a list of keywords that point to it. */
   const searchMap = [
     {
       page: "findings.html",
@@ -138,17 +137,13 @@
 (function initFilter() {
   const buttons = document.querySelectorAll(".filter-btn");
   if (!buttons.length) return; // only runs on findings page
-
   buttons.forEach(function (btn) {
     btn.addEventListener("click", function () {
-
       // remove active style from all buttons, add to clicked one
       buttons.forEach(function (b) { b.classList.remove("active"); });
       btn.classList.add("active");
-
       const filter = btn.getAttribute("data-filter");
       const topics = document.querySelectorAll("[data-topic]");
-
       topics.forEach(function (panel) {
         if (filter === "all" || panel.getAttribute("data-topic") === filter) {
           // show matching panels
